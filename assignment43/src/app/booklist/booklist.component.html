@@ -1,0 +1,36 @@
+<div style = "text-align: center" >
+    <style>
+        table #11 {
+          border-collapse: collapse;
+          width: 60%;
+      }
+      
+      td, th {
+          border: 1px solid #bbbbbb;
+          text-align: center;
+          padding: 8px;
+      }
+      
+    </style>
+    
+    
+    
+    <table styleid=11 align = "center">
+          <caption>
+              <strong>Book Names</strong>
+          </caption>
+    
+    
+          <tr>
+              <th> Name </th>
+          </tr>
+    
+             <tr *ngFor = "let value of book" styleid = 11>
+              <td>{{value.name}}</td>
+             </tr>
+    
+    </table>
+    
+    
+    
+      </div>

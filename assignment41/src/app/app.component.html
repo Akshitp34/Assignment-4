@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1> Communication Between Child and Parent Component </h1>
+
+
+<input type = "number" #no1>
+<input type = "number" #no2>
+<br><br>
+   <button (click) ="setFlag(no1.value,no2.value)">ADD</button>
+     
+  <div *ngIf = "buttonFlag ; then sendData"></div>
+  <ng-template #sendData>
+
+     <app-childcomponent (ResetEvent) = 'buttonFlag = $event.value' [number1] = "num1" [number2] = "num2" ></app-childcomponent>
+
+  </ng-template>
+ 
+  </div>
